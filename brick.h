@@ -6,7 +6,7 @@
 
 class Brick {
 public:
-    explicit Brick (uint16_t hightPos, uint16_t widhtPos, char pattern) noexcept : hightPos_(hightPos), widhtPos_(widhtPos), pattern_(pattern) {}
+    explicit Brick (uint16_t hightPos, uint16_t widhtPos, char pattern) noexcept;
     std::pair<uint16_t, uint16_t> getPosition() const {
         return std::make_pair(hightPos_, widhtPos_);
     }
